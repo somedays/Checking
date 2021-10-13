@@ -214,12 +214,13 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .ck-table tr:last-child th,
 .ck-table tr:last-child td {border-bottom:0 none;}
 .ck-table th {background-color:#f3f3f4;font-weight:300;color:#8a8a8a;}
-.ck-table td {background-color:#eeeeee;font-weight:600;color:#4a4a4a;}
+.ck-table td {position:relative;background-color:#eeeeee;font-weight:600;color:#4a4a4a;}
 .ck-table tr:only-child th {font-weight:600;color:#4a4a4a;height:44px;line-height:44px;font-size:13px;}
 .ck-table input {width:100%;box-sizing:border-box;border-radius:3px;border:1px solid #e1e1e1;height:32px;line-height:30px;text-align:center;font-weight:600;font-size:11px;font-style:italic;}
 .ck-table .ck-select {margin:0 0 0 5px;display:inline-block;}
 .ck-table .ck-select select {width:100px;height:22px;font-size:11px;line-height:20px;padding-left:10px;font-weight:500;}
 .ck-table .ck-select:after {width:8px;height:8px;right:10px;}
+.ck-table .ck-btn {position:absolute;top:8px;right:8px;width:auto;height:24px;line-height:20px;font-size:12px;padding:0 7px;border-radius:3px;}
 
 .ck-list li {position:relative;padding:15px 50px 15px 20px;border-bottom:1px solid #ddd;}
 .ck-list li:after {content:"";display:block;position:absolute;top:50%;margin-top:-7px;right:20px;background:url(../img/icon_arrow_right.svg) 0 0 no-repeat;background-size:100%;width:14px;height:14px;opacity:0.4;}
@@ -231,6 +232,29 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .ck-list-view-tt strong {display:block;font-size:15px;font-weight:500;}
 .ck-list-view-tt .date {display:block;color:#777;font-size:13px;padding-top:4px;}
 .ck-list-view-ctn {padding:20px;}
+.ck-list .gp-tt {background-color:#f5f5f5;font-size:12px;padding:15px 20px 5px 20px;color:#555;}
+
+.ck-list.mypage li {padding:12px 50px 12px 20px;}
+.ck-list.mypage li strong {font-size:13px;}
+.ck-list.mypage li .select-item {position:absolute;top:50%;right:40px;color:#999;font-size:13px;font-weight:400;margin-top:-8px;line-height:16px;}
+
+.ck-list.university li {padding:5px 20px;border-bottom:0 none;}
+.ck-list.university li:first-of-type {margin-top:10px;}
+.ck-list.university li:after {background:url(../img/icon_plus.svg) 0 0 no-repeat;right:38px;width:16px;height:16px;}
+.ck-list.university li.active:after {right:35px;background:url(../img/icon_arrow_right_g.svg) 0 0 no-repeat;opacity:1;}
+.ck-list.university li.active .uni-item {border-color:#41ac74;background-color:rgba(65,172,117,0.1);}
+
+.ck-list .uni-item {position:relative;display:flex;border:1px solid #e0e0e0;border-radius:50px;background-color:#f5f5f5;}
+.ck-list .uni-item .uni-logo {display:inline-flex;justify-content:center;align-items:center;padding:8px;flex:0 0 55px;box-sizing:border-box;}
+.ck-list .uni-item .uni-logo img {width:30px;height:30px;}
+.ck-list .uni-item .uni-tt {flex:1;padding:8px 0;box-sizing:border-box;}
+.ck-list .uni-item .uni-tt strong {display:block;font-size:14px;font-weight:500;}
+.ck-list .uni-item .uni-tt span {display:block;font-size:11px;color:#9e9e9e;font-weight:300;}
+.ck-list .uni-item .uni-txt {line-height:52px;padding-left:20px;font-size:14px;color:#999;font-weight:500;}
+
+.ck-list.test li {padding:12px 50px 12px 20px;}
+.ck-list.test li:after {display:none;}
+.ck-list.test li.select:after {display:block;background:url(../img/icon_check.svg) 0 0 no-repeat;opacity:1;width:16px;height:16px;}
 
 .university-logo {text-align:center;padding-bottom:15px;}
 .university-logo img {max-width:72px;}
@@ -248,9 +272,24 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .ck-v-table.style-gray td {border-color:#ddd;}
 .ck-v-table th {background-color:#f2f2f2;}
 
+.ck-tip p {font-size:13px;color:#777;font-weight:400;}
+
+.ck-pop {position:fixed;top:0;left:0;right:0;bottom:0;z-index:100;background-color:#fff;}
+.ck-pop .ck-pop-close {position:absolute;top:20px;right:20px;width:20px;height:20px;background:url(../img/icon_close.svg) 0 0 no-repeat;background-size:100%;}
+.ck-pop .ck-pop-ctn {position:relative;padding:0 20px 20px 20px;max-height:calc(100vh - 70px);overflow:auto;box-sizing:border-box;}
+.ck-pop-footer {position:fixed;bottom:0;left:0;right:0;padding:15px 30px;background-color:#fff;}
+
+.ck-check-uni .uni-info {border-bottom:1px solid #ddd;padding-bottom:15px;}
+.ck-check-uni .uni-logo {text-align:center;padding-top:30px;}
+.ck-check-uni .uni-logo img {max-width:48px;}
+.ck-check-uni .uni-tt strong {display:block;text-align:center;font-size:14px;font-weight:600;}
+.ck-check-uni .uni-tt span {display:block;text-align:center;font-size:13px;font-weight:400;color:#888;}
+.ck-check-uni .ck-table {padding:20px 0;}
 
 .ck-btn-area {position:fixed;bottom:60px;left:0;right:0;padding:15px 30px;background-color:#fff;}
 .tb-btn-area {padding:10px 20px;}
+.ck-btn-area.fixed-bottom {bottom:0;z-index:100;border-top:1px solid #ddd;box-sizing:border-box;padding:10px 30px;}
+.ck-btn-area.fixed-bottom .ck-btn img {max-width:80px;vertical-align:middle;}
 .ck-btn {border:2px solid #41ac74;height:40px;width:100%;color:#41ac74;font-size:14px;text-align:center;line-height:36px;box-sizing:border-box;border-radius:10px;}
 .ck-btn.primary {background-color:#41ac74;color:#fff;}
 .tb-btn-area .ck-btn {padding:0 50px;width:auto;display:inline-block;border-radius:20px;line-height:32px;height:36px;text-align:center;min-width:100px;font-size:13px;}
