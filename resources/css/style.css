@@ -270,7 +270,7 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .ck-v-table h4 span {display:inline-block;padding:10px 0 5px 0;font-size:14px;font-weight:500;}
 .ck-v-table.style-gray th,
 .ck-v-table.style-gray td {border-color:#ddd;}
-.ck-v-table th {background-color:#f2f2f2;}
+.ck-v-table.style-gray th {background-color:#f2f2f2;}
 
 .ck-tip p {font-size:13px;color:#777;font-weight:400;}
 
