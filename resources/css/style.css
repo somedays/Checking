@@ -117,11 +117,21 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .login-wrap {height:100vh;display:flex;justify-content:center;align-items:center;flex-direction:column;padding:0 30px;}
 .login-logo {margin-bottom:20px;}
 .login-logo img {width:150px;}
+.login-tt {font-size:18px;font-weight:600;margin-top:-15px;}
 .login-form {width:100%;}
 .login-form .form-item {display:flex;flex-direction:row;width:100%;border-bottom:1px solid #efeff4;height:45px;margin-top:10px;}
 .login-form .form-item .form-icon {display:inline-flex;flex:0 0 20px;justify-content:center;align-items:center;pointer-events:none;}
 .login-form .form-item .form-icon img {width:16px;height:16px;}
-.login-form .form-item input {border:0 none;width:100%;flex:1;height:44px;line-height:44px;background-color:transparent;padding-left:10px;color:#222;}
+.login-form .form-item input[type="text"],
+.login-form .form-item input[type="password"] {border:0 none;width:100%;flex:1;height:44px;line-height:44px;background-color:transparent;padding-left:10px;color:#222;}
+.login-form .form-item .item-radio {display:inline-block;}
+.login-form .form-item.radio strong {display:none;}
+.login-form .form-item .item-radio input[type="radio"] {display:none;}
+.login-form .form-item .item-radio input[type="radio"] + span {position:relative;display:inline-block;vertical-align:middle;margin-right:10px;line-height:30px;}
+.login-form .form-item .item-radio input[type="radio"] + span:before {content:"";display:inline-block;width:16px;height:16px;border-radius:50%;border:1px solid #dcdce2;vertical-align:middle;margin-right:5px;margin-top:-2px;}
+.login-form .form-item .item-radio input[type="radio"]:checked + span:before {border-color:#41ac74;}
+.login-form .form-item .item-radio input[type="radio"]:checked + span:after {content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background-color:#41ac74;position:absolute;top:11px;left:4px;}
+
 .text-btn {height:40px;line-height:40px;margin:10px 0;color:#8a8a8f;font-size:13px;font-weight:400;}
 
 .login-join {text-align:center;margin-top:15px;}
