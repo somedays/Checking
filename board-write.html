@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+</head>
+<body>
+<div class="header">
+    <div class="header-wrap">
+        <div class="header-title"><strong>정보 게시판</strong></div>
+        <div class="header-btn left"><img src="resources/img/icon_close.svg"></div>
+    </div>
+</div>
+<div class="content">
+    <div class="content-wrap">
+        <div class="ck-form">
+            <div class="ck-form-item">
+                <h5>구분</h5>
+                <div class="ck-form-radio">
+                    <label for="type1"><input type="radio" id="type1" name="type-gp" checked><span>실기정보</span></label>
+                    <label for="type2"><input type="radio" id="type2" name="type-gp"><span>입시정보</span></label>
+                    <label for="type3"><input type="radio" id="type3" name="type-gp"><span>기타</span></label>
+                </div>
+                
+            </div>
+            <div class="ck-form-item">
+                <label for="subject">제목</label>
+                <input type="text" id="subject" placeholder="제목을 입력하세요.">
+            </div>
+            <div class="ck-form-item">
+                <label for="nickname">닉네임</label>
+                <input type="text" id="nickname" placeholder="게시판에서 사용할 닉네임을 입력하세요.">
+            </div>
+            <div class="ck-form-editor" style="height:300px;margin:10px 20px;border:1px solid #ddd;">에디터를 여기 넣어주세요.<br> style 부분은 에디터의 모양에따라 삭제하세요.</div>
+        </div>
+        <div class="ck-btn-area">
+            <div class="ck-btn primary">제출</div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-wrap">
+        <div class="footer-nav">
+            <div class="footer-nav-item"><span><img src="resources/img/icon_home.svg"></span></div>
+            <div class="footer-nav-item active has-alert"><span><img src="resources/img/icon_university.svg"></span></div>
+            <div class="footer-nav-item"><span><img src="resources/img/icon_checking.svg"></span></div>
+            <div class="footer-nav-item has-alert"><span><img src="resources/img/icon_alert.svg"></span></div>
+            <div class="footer-nav-item"><span><img src="resources/img/icon_mypage.svg"></span></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+$(document).ready(function(){
+
+});
+</script>
+</body>
+</html>
