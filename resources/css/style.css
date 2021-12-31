@@ -307,6 +307,9 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 
 .ck-list.board li.notice > strong > span {white-space:normal;max-width:100%;}
 
+.ck-view-btns {text-align:center;padding:10px 0;background-color:#fafafa;}
+.ck-view-btns .ck-btn {padding:4px 25px;margin:0 3px;background-color:#fff;}
+
 .ck-cmt-box {border-top:1px solid #ddd;padding:8px 0 0 0;background-color:#fafafa;}
 .ck-cmt-box h4 {padding-bottom:5px;line-height:26px;padding:0 20px;}
 .ck-cmt-box h4 i {display:inline-block;font-size:16px;vertical-align:top;line-height:20px;}
